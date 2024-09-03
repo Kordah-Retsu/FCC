@@ -1,0 +1,37 @@
+*{
+    padding:10px 0 10px 0;
+}
+
+.body{
+    background-color: rgb(234, 227, 227);
+    }
+
+  .body>h1, .body>p{
+    text-align: center;
+    margin:auto;
+  }
+
+  img{display: block;
+    padding:px;
+    max-width: 100%;
+    display: block;
+    height: auto;
+    margin:0 auto;
+    width: 90%;
+    padding-right:-50px;
+    position: center;
+  }
+
+  .img-div{
+    background-color: white;
+    justify-content: center;
+  }
+
+  .img-div>p{
+    text-align: center;
+  }
+
+  .life{
+    font-weight: bold;
+    text-align: center; 
+  }
