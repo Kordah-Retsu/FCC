@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Technical Documentation</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav id="navbar">
+    <header>Documentation Navigation</header>
+    <a class="nav-link" href="#HTML_Introduction">HTML Introduction</a>
+    <a class="nav-link" href="#CSS_Basics">CSS Basics</a>
+    <a class="nav-link" href="#JavaScript_Fundamentals">JavaScript Fundamentals</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#Version_Control">Version Control</a>
+  </nav>
+
+  <!-- Main content -->
+  <main id="main-doc">
+    <!-- Section 1 -->
+    <section class="main-section" id="HTML_Introduction">
+      <header>HTML Introduction</header>
+      <p>HTML stands for HyperText Markup Language, and it is the standard language for creating web pages.</p>
+      <p>HTML consists of elements, each defined by tags, that tell the browser how to structure a webpage.</p>
+      <code>&lt;html&gt;&lt;/html&gt;</code>
+      <ul>
+        <li>HTML Tags</li>
+        <li>Attributes</li>
+      </ul>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="main-section" id="CSS_Basics">
+      <header>CSS Basics</header>
+      <p>CSS stands for Cascading Style Sheets, and it describes how HTML elements are displayed on the screen.</p>
+      <p>CSS can be applied inline, internally within a style block, or externally by linking a CSS file.</p>
+      <code>body { margin: 0; }</code>
+      <ul>
+        <li>Selectors</li>
+        <li>Properties</li>
+        <li>Box Model</li>
+      </ul>
+    </section>
+
+    <!-- Section 3 -->
+    <section class="main-section" id="JavaScript_Fundamentals">
+      <header>JavaScript Fundamentals</header>
+      <p>JavaScript is a programming language that allows you to create dynamically updating content.</p>
+      <p>It is a versatile language used in both client-side and server-side development.</p>
+      <code>console.log('Hello, World!');</code>
+      <ul>
+        <li>Variables</li>
+        <li>Functions</li>
+        <li>Loops</li>
+      </ul>
+    </section>
+
+    <!-- Section 4 -->
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive design ensures that web content adjusts to different screen sizes, from mobile phones to desktops.</p>
+      <p>Media queries in CSS allow you to apply styles based on device characteristics.</p>
+      <code>@media (max-width: 600px) { ... }</code>
+      <ul>
+        <li>Fluid Grids</li>
+        <li>Flexible Images</li>
+        <li>Media Queries</li>
+      </ul>
+    </section>
+
+    <!-- Section 5 -->
+    <section class="main-section" id="Version_Control">
+      <header>Version Control</header>
+      <p>Version control systems help track changes in code, allowing multiple developers to collaborate on a project.</p>
+      <p>Git is a popular version control system, and GitHub is a platform for hosting Git repositories.</p>
+      <code>git init</code>
+      <ul>
+        <li>Commits</li>
+        <li>Branches</li>
+        <li>Merging</li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    document.querySelectorAll('a.nav-link').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
+</body>
+</html>
